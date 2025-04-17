@@ -200,6 +200,24 @@
         color: #666;
     }
 
+    /* Agregar al CSS existente */
+.whatsapp-btn {
+    background: var(--accent);
+    color: var(--light);
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    font-size: inherit;
+    transition: transform 0.3s;
+    margin-top: 1rem;
+    display: inline-block;
+}
+
+.whatsapp-btn:hover {
+    transform: scale(1.05);
+}
+
     footer a {
         color: var(--light);
         text-decoration: none;
@@ -252,7 +270,9 @@
         <h1>Tatuajes Profesionales en Cali</h1>
         <p>Blackwork & Anime Tattoo Artist | Cali • Bogotá</p>
         <p>Especialista en tatuajes para hombres y mujeres, desde diseños pequeños hasta piezas completas en el brazo o cuello. Consulta precios para tatuajes en Cali.</p>
-        <a href="https://wa.link/dyg1r3" class="cta-btn" aria-label="Reservar cita por WhatsApp">Reservar por WhatsApp</a>
+        <button class="cta-btn whatsapp-btn" onclick="window.open('https://wa.link/dyg1r3', '_blank')" aria-label="Reservar cita por WhatsApp">
+            Reservar por WhatsApp
+        </button>
     </section>
 
     <!-- Galería -->
